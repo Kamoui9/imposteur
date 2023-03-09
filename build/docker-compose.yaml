@@ -2,8 +2,9 @@ version: '3'
 services:
   apache:
     build:
-      context: ../
-      dockerfile: build/apache/Dockerfile
-    image: testwebserver:1.0
+      context: apache
+      dockerfile: Dockerfile
+      args:
+        BUILD_OPTIONS: --no-cache
     ports:
       - "8080:80"
