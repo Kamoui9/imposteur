@@ -7,3 +7,4 @@ services:
       - "8080:80"
     volumes:
       - ../website:/var/www/html
+      - ./custom.ini:/usr/local/etc/php/conf.d/custom.ini
