@@ -1,10 +1,9 @@
 version: '3'
+
 services:
   apache:
-    build:
-      context: apache
-      dockerfile: Dockerfile
-      args:
-        BUILD_OPTIONS: --no-cache
+    image: httpd:latest
     ports:
-      - "8080:80"
+      - "80:80"
+    volumes:
+      - ../website:/usr/local/apache2/htdocs/
