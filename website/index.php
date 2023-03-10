@@ -12,11 +12,11 @@
 
     <h1>IMPOSTEUR</h1>
     <h2>wanna play ?</h2>
-    <form method="POST">
+    <form method="post">
 
         <input type="text" id="username" name="username" placeholder="enter your username">
-        <input type="button" type="submit" id="create-game-button" value="CREATE GAME" title="min 3 caracteres" disabled>
-        <input type="button" type="submit" id="join-game-button" value="JOIN GAME" disabled>
+        <input type="submit" id="create-game-button" value="CREATE GAME" title="min 3 caracteres" disabled>
+        <input type="submit" id="join-game-button" value="JOIN GAME" disabled>
 
     </form>
     
