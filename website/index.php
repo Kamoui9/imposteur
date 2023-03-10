@@ -9,20 +9,17 @@
     <title>- IMPOSTEUR -</title>
 </head>
 <body>
-    
+
+    <h1>IMPOSTEUR</h1>
     <h2>wanna play ?</h2>
-    <input type="text" placeholder="enter your username" id="game-name">
-    <input type="button" id="create-game-button" value="CREATE GAME" title="min 3 caracteres" disabled>
-    <input type="button" value="JOIN GAME" disabled>
+    <form method="POST">
 
-    <?php 
+        <input type="text" id="username" name="username" placeholder="enter your username">
+        <input type="button" type="submit" id="create-game-button" value="CREATE GAME" title="min 3 caracteres" disabled>
+        <input type="button" type="submit" id="join-game-button" value="JOIN GAME" disabled>
 
-
-    echo $_GET['nom']
+    </form>
     
-    
-    ?>
-
 </body>
 
 <script src="script.js"></script>
